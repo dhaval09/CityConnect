@@ -27,6 +27,10 @@ public class areCityConnectedService implements areCityConnectedInterface {
 	String filename = "city.txt";
 
 	public String areCitiesConnectedService(String source, String destination) {
+		if (source.length()<=1 || destination.length()<=1 )
+		{
+			return "no";
+		}
 		Logger.info("areCitiesConnectedService Intialized");
 		try {
 			Map<String, Set<String>> cityToNodeMap = readandParseFile(filename);
