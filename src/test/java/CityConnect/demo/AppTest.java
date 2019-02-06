@@ -14,9 +14,9 @@ public class AppTest {
 	areCityConnectedService testareCityConnectedService;
 
 	/**
-	 * Create the test case
+	 * Testing the core method only as rest all are private methods not exposed 
 	 *
-	 * @param testName name of the test case
+	 * 
 	 */
 	@Before
 	public void setUp() {
@@ -33,4 +33,6 @@ public class AppTest {
 		validate = testareCityConnectedService.areCitiesConnectedService("", "");
 		assertEquals("no", validate);
 	}
+	
+	
 }
